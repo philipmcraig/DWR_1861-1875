@@ -1,0 +1,3 @@
+Var	Year	Month	Day	Hour	Minute	Value	Test
+ta	1867	1	5	8	0	-10	climatic_outliers
+ta	1869	4	26	8	0	17.2222222222	climatic_outliers

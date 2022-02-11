@@ -1,0 +1,14 @@
+Var	Year	Month	Day	Hour	Minute	Value	Test
+ta	1863	8	28	8	0	8.33333333333	climatic_outliers
+ta	1866	9	6	8	0	13.3333333333	subdaily_repetition
+ta	1866	9	7	8	0	13.3333333333	subdaily_repetition
+ta	1866	9	8	8	0	13.3333333333	subdaily_repetition
+ta	1866	9	10	8	0	13.3333333333	subdaily_repetition
+ta	1866	9	11	8	0	13.3333333333	subdaily_repetition
+ta	1866	9	12	8	0	13.3333333333	subdaily_repetition
+ta	1866	9	13	8	0	13.3333333333	subdaily_repetition
+ta	1866	9	14	8	0	13.3333333333	subdaily_repetition
+ta	1872	8	19	14	0	22.2222222222	climatic_outliers
+ta	1872	8	21	14	0	22.2222222222	climatic_outliers
+ta	1874	8	21	14	0	23.3333333333	climatic_outliers
+ta	1874	8	22	14	0	23.8888888889	climatic_outliers
