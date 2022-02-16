@@ -1,0 +1,6 @@
+Var	Year	Month	Day	Value	Test
+Tx	1874	3	2	11.1111111111	daily_repetition
+Tx	1874	3	3	11.1111111111	daily_repetition
+Tx	1874	3	4	11.1111111111	daily_repetition
+Tx	1874	3	5	11.1111111111	daily_repetition
+Tx	1874	3	6	11.1111111111	daily_repetition
