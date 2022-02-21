@@ -1,0 +1,7 @@
+Var	Year	Month	Day	Hour	Minute	Value	Test
+tb	1874	6	23	8	0	13.3333333333	subdaily_repetition
+tb	1874	6	24	8	0	13.3333333333	subdaily_repetition
+tb	1874	6	25	8	0	13.3333333333	subdaily_repetition
+tb	1874	6	26	8	0	13.3333333333	subdaily_repetition
+tb	1874	6	27	8	0	13.3333333333	subdaily_repetition
+tb	1874	6	28	8	0	13.3333333333	subdaily_repetition
