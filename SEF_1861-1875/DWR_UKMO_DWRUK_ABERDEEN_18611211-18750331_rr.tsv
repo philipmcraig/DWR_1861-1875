@@ -3,7 +3,7 @@ ID	DWRUK_ABERDEEN
 Name	Aberdeen Observatory
 Lat	57.164128
 Lon	-2.100822
-Alt	14.0
+Alt	14
 Source	DWR_UKMO
 Link	
 Vbl	rr
@@ -672,16 +672,16 @@ Year	Month	Day	Hour	Minute	Period	Value	Meta
 1864	3	10	8	0	p1day	0	orig=0.0in
 1864	3	11	8	0	p1day	0	orig=0.0in
 1864	3	12	8	0	p1day	0	orig=0.0in
-1864	3	14	8	0	p1day	0	orig=0.0in
-1864	3	15	8	0	p1day	3.048	orig=0.12in
-1864	3	16	8	0	p1day	8.89	orig=0.35in
-1864	3	17	8	0	p1day	0	orig=0.0in
-1864	3	18	8	0	p1day	2.794	orig=0.11in
-1864	3	19	8	0	p1day	4.064	orig=0.16in
+1864	3	14	8	0	p1day	3.048	orig=0.12in
+1864	3	15	8	0	p1day	8.89	orig=0.35in
+1864	3	16	8	0	p1day	0	orig=0.0in
+1864	3	17	8	0	p1day	2.794	orig=0.11in
+1864	3	18	8	0	p1day	4.064	orig=0.16in
+1864	3	19	8	0	p1day	0	orig=0.0in
 1864	3	21	8	0	p1day	0	orig=0.0in
-1864	3	22	8	0	p1day	0	orig=0.0in
-1864	3	23	8	0	p1day	4.826	orig=0.19in
-1864	3	24	8	0	p1day	2.794	orig=0.11in
+1864	3	22	8	0	p1day	4.826	orig=0.19in
+1864	3	23	8	0	p1day	2.794	orig=0.11in
+1864	3	24	8	0	p1day	0	orig=0.0in
 1864	3	25	8	0	p1day	0	orig=0.0in
 1864	3	26	8	0	p1day	3.81	orig=0.15in
 1864	3	28	8	0	p1day	8.89	orig=0.35in

@@ -3,7 +3,7 @@ ID	DWRUK_LIVERPOOL
 Name	Bidston Observatory
 Lat	53.400735
 Lon	-3.074226
-Alt	54.9
+Alt	
 Source	DWR_UKMO
 Link	
 Vbl	rr
@@ -673,14 +673,14 @@ Year	Month	Day	Hour	Minute	Period	Value	Meta
 1864	3	10	8	0	p1day	0	orig=0.0in
 1864	3	11	8	0	p1day	1.016	orig=0.04in
 1864	3	12	8	0	p1day	2.54	orig=0.1in
-1864	3	14	8	0	p1day	2.54	orig=0.1in
-1864	3	15	8	0	p1day	0	orig=0.0in
-1864	3	16	8	0	p1day	2.032	orig=0.08in
+1864	3	14	8	0	p1day	0	orig=0.0in
+1864	3	15	8	0	p1day	2.032	orig=0.08in
+1864	3	16	8	0	p1day	1.27	orig=0.05in
 1864	3	17	8	0	p1day	1.27	orig=0.05in
-1864	3	18	8	0	p1day	1.27	orig=0.05in
+1864	3	18	8	0	p1day	0	orig=0.0in
 1864	3	19	8	0	p1day	0	orig=0.0in
-1864	3	21	8	0	p1day	0	orig=0.0in
-1864	3	22	8	0	p1day	0.254	orig=0.01in
+1864	3	21	8	0	p1day	0.254	orig=0.01in
+1864	3	22	8	0	p1day	0	orig=0.0in
 1864	3	23	8	0	p1day	0	orig=0.0in
 1864	3	24	8	0	p1day	0	orig=0.0in
 1864	3	25	8	0	p1day	0	orig=0.0in

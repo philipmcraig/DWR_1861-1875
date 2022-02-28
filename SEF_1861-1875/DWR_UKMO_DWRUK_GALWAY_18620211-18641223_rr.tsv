@@ -1,8 +1,8 @@
 SEF	1.0.0
 ID	DWRUK_GALWAY
 Name	Galway
-Lat	53.28
-Lon	-9.06
+Lat	53.27866
+Lon	-9.06126
 Alt	7.6
 Source	DWR_UKMO
 Link	
@@ -639,11 +639,11 @@ Year	Month	Day	Hour	Minute	Period	Value	Meta
 1864	3	9	8	0	p1day	0	orig=0.0in
 1864	3	11	8	0	p1day	8.89	orig=0.35in
 1864	3	12	8	0	p1day	6.35	orig=0.25in
-1864	3	14	8	0	p1day	6.35	orig=0.25in
-1864	3	15	8	0	p1day	3.302	orig=0.13in
-1864	3	16	8	0	p1day	12.7	orig=0.5in
-1864	3	17	8	0	p1day	0	orig=0.0in
-1864	3	18	8	0	p1day	12.7	orig=0.5in
+1864	3	14	8	0	p1day	3.302	orig=0.13in
+1864	3	15	8	0	p1day	12.7	orig=0.5in
+1864	3	16	8	0	p1day	0	orig=0.0in
+1864	3	17	8	0	p1day	12.7	orig=0.5in
+1864	3	18	8	0	p1day	0	orig=0.0in
 1864	3	19	8	0	p1day	0	orig=0.0in
 1864	3	21	8	0	p1day	0	orig=0.0in
 1864	3	22	8	0	p1day	0	orig=0.0in
