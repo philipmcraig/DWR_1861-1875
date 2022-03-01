@@ -1,0 +1,4 @@
+Var	Year	Month	Day	Hour	Minute	Value	Test
+rr	1862	3	7	8	0	34.29	climatic_outliers
+rr	1863	6	12	8	0	40.386	climatic_outliers
+rr	1868	8	12	8	0	56.388	climatic_outliers
