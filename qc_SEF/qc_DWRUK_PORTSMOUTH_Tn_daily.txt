@@ -1,0 +1,9 @@
+Var	Year	Month	Day	Value	Test
+Tn	1873	7	6	13.3333333333	daily_repetition
+Tn	1873	7	7	13.3333333333	daily_repetition
+Tn	1873	7	8	13.3333333333	daily_repetition
+Tn	1873	7	9	13.3333333333	daily_repetition
+Tn	1873	12	3	5	daily_repetition
+Tn	1873	12	4	5	daily_repetition
+Tn	1873	12	5	5	daily_repetition
+Tn	1873	12	6	5	daily_repetition
