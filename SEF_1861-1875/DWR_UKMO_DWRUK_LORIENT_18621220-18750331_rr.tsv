@@ -9,7 +9,7 @@ Link
 Vbl	rr
 Stat	sum
 Units	mm
-Meta	alias=Beg Melen
+Meta	Alias=Beg Melen
 Year	Month	Day	Hour	Minute	Period	Value	Meta
 1862	12	20	7	51	p1day	0	orig=0.0in
 1862	12	22	7	51	p1day	5.08	orig=0.2in
@@ -538,7 +538,20 @@ Year	Month	Day	Hour	Minute	Period	Value	Meta
 1864	9	7	7	51	p1day	0	orig=0.0in
 1864	9	8	7	51	p1day	0	orig=0.0in
 1864	9	9	7	51	p1day	1.016	orig=0.04in
+1864	9	10	7	51	p1day	1.016	orig=0.04in
 1864	9	12	7	51	p1day	11.938	orig=0.47in
+1864	9	13	7	51	p1day	1.016	orig=0.04in
+1864	9	14	7	51	p1day	1.016	orig=0.04in
+1864	9	15	7	51	p1day	33.02	orig=1.3in
+1864	9	16	7	51	p1day	8.89	orig=0.35in
+1864	9	17	7	51	p1day	4.064	orig=0.16in
+1864	9	19	7	51	p1day	4.064	orig=0.16in
+1864	9	20	7	51	p1day	1.016	orig=0.04in
+1864	9	21	7	51	p1day	25.908	orig=1.02in
+1864	9	22	7	51	p1day	2.032	orig=0.08in
+1864	9	23	7	51	p1day	0	orig=0.0in
+1864	9	24	7	51	p1day	0	orig=0.0in
+1864	9	26	7	51	p1day	0	orig=0.0in
 1864	9	28	7	51	p1day	0	orig=0.0in
 1864	9	29	7	51	p1day	0	orig=0.0in
 1864	9	30	7	51	p1day	0	orig=0.0in

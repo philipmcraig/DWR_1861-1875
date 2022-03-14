@@ -9,7 +9,7 @@ Link
 Vbl	rr
 Stat	sum
 Units	mm
-Meta	Height=7.01m
+Meta	
 Year	Month	Day	Hour	Minute	Period	Value	Meta
 1861	12	19	8	0	p1day	6.096	orig=0.24in
 1862	1	3	8	0	p1day	4.572	orig=0.18in
@@ -741,7 +741,21 @@ Year	Month	Day	Hour	Minute	Period	Value	Meta
 1864	9	7	8	0	p1day	2.032	orig=0.08in
 1864	9	8	8	0	p1day	0	orig=0.0in
 1864	9	9	8	0	p1day	0	orig=0.0in
+1864	9	10	8	0	p1day	2.286	orig=0.09in
 1864	9	12	8	0	p1day	2.286	orig=0.09in
+1864	9	13	8	0	p1day	0	orig=0.0in
+1864	9	14	8	0	p1day	1.778	orig=0.07in
+1864	9	15	8	0	p1day	2.286	orig=0.09in
+1864	9	16	8	0	p1day	0	orig=0.0in
+1864	9	17	8	0	p1day	12.7	orig=0.5in
+1864	9	19	8	0	p1day	1.778	orig=0.07in
+1864	9	20	8	0	p1day	1.778	orig=0.07in
+1864	9	21	8	0	p1day	8.89	orig=0.35in
+1864	9	22	8	0	p1day	2.286	orig=0.09in
+1864	9	23	8	0	p1day	0	orig=0.0in
+1864	9	24	8	0	p1day	0	orig=0.0in
+1864	9	26	8	0	p1day	0	orig=0.0in
+1864	9	27	8	0	p1day	0	orig=0.0in
 1864	9	28	8	0	p1day	0	orig=0.0in
 1864	9	30	8	0	p1day	0	orig=0.0in
 1864	10	1	8	0	p1day	0	orig=0.0in

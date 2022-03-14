@@ -1,6 +1,6 @@
 SEF	1.0.0
 ID	DWRUK_NAIRN
-Name	Nairn)
+Name	Nairn
 Lat	57.577607
 Lon	-3.895321
 Alt	25
@@ -9,7 +9,7 @@ Link
 Vbl	mslp
 Stat	point
 Units	hPa
-Meta	PTC=Y|PGC=N|alias=Delnies Schoolhouse
+Meta	PTC=Y|PGC=N|Alias=Delnies Schoolhouse
 Year	Month	Day	Hour	Minute	Period	Value	Meta
 1861	3	1	8	0	0	989.841797	orig=29.23inHg
 1861	3	2	8	0	0	998.307772	orig=29.48inHg
@@ -1103,7 +1103,21 @@ Year	Month	Day	Hour	Minute	Period	Value	Meta
 1864	9	7	8	0	0	1008.805581	orig=29.79inHg
 1864	9	8	8	0	0	996.953216	orig=29.44inHg
 1864	9	9	8	0	0	988.82588	orig=29.2inHg
+1864	9	10	8	0	0	1007.789664	orig=29.76inHg
 1864	9	12	8	0	0	1012.53061	orig=29.9inHg
+1864	9	13	8	0	0	1004.741913	orig=29.67inHg
+1864	9	14	8	0	0	988.487241	orig=29.19inHg
+1864	9	15	8	0	0	994.921382	orig=29.38inHg
+1864	9	16	8	0	0	992.550909	orig=29.31inHg
+1864	9	17	8	0	0	988.148602	orig=29.18inHg
+1864	9	19	8	0	0	998.646411	orig=29.49inHg
+1864	9	20	8	0	0	1008.128303	orig=29.77inHg
+1864	9	21	8	0	0	998.307772	orig=29.48inHg
+1864	9	22	8	0	0	997.291855	orig=29.45inHg
+1864	9	23	8	0	0	1003.725996	orig=29.64inHg
+1864	9	24	8	0	0	1013.885166	orig=29.94inHg
+1864	9	26	8	0	0	1022.012502	orig=30.18inHg
+1864	9	27	8	0	0	1022.012502	orig=30.18inHg
 1864	9	28	8	0	0	1024.044336	orig=30.24inHg
 1864	9	29	8	0	0	1019.30339	orig=30.1inHg
 1864	9	30	8	0	0	1019.30339	orig=30.1inHg
