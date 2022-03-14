@@ -6,3 +6,4 @@ rr	1864	1	21	8	0	18.542	climatic_outliers
 rr	1867	12	1	8	0	30.226	climatic_outliers
 rr	1869	9	30	8	0	41.402	climatic_outliers
 rr	1872	7	24	8	0	48.514	climatic_outliers
+rr	1872	9	20	8	0	30.734	climatic_outliers
