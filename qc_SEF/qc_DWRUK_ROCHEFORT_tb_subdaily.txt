@@ -1,0 +1,5 @@
+Var	Year	Month	Day	Hour	Minute	Value	Test
+tb	1872	7	4	13	51	29.4444444444	climatic_outliers
+tb	1872	7	5	13	51	31.1111111111	climatic_outliers
+tb	1872	7	20	13	51	31.6666666667	climatic_outliers
+tb	1872	7	21	13	51	31.6666666667	climatic_outliers
