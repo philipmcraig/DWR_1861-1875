@@ -308,7 +308,7 @@ Year	Month	Day	Hour	Minute	Period	Value	Meta
 1863	1	8	8	0	p1day	0.508	orig=0.02in
 1863	1	9	8	0	p1day	0	orig=0.0in
 1863	1	10	8	0	p1day	0.508	orig=0.02in
-1863	1	12	8	0	p1day	0	orig=0.0in
+1863	1	12	8	0	p1day	1.524	orig=0.06in
 1863	1	13	8	0	p1day	15.24	orig=0.6in
 1863	1	14	8	0	p1day	3.302	orig=0.13in
 1863	1	15	8	0	p1day	0	orig=0.0in
