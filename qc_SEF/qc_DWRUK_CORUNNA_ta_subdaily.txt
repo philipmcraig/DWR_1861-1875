@@ -1,0 +1,14 @@
+Var	Year	Month	Day	Hour	Minute	Value	Test
+ta	1867	5	21	8	0	15.5555555556	subdaily_repetition
+ta	1867	5	22	8	0	15.5555555556	subdaily_repetition
+ta	1867	5	23	8	0	15.5555555556	subdaily_repetition
+ta	1867	5	24	8	0	15.5555555556	subdaily_repetition
+ta	1867	5	25	8	0	15.5555555556	subdaily_repetition
+ta	1867	5	26	8	0	15.5555555556	subdaily_repetition
+ta	1867	5	27	8	0	15.5555555556	subdaily_repetition
+ta	1867	8	1	8	0	19.4444444444	subdaily_repetition
+ta	1867	8	2	8	0	19.4444444444	subdaily_repetition
+ta	1867	8	3	8	0	19.4444444444	subdaily_repetition
+ta	1867	8	5	8	0	19.4444444444	subdaily_repetition
+ta	1867	8	6	8	0	19.4444444444	subdaily_repetition
+ta	1867	8	7	8	0	19.4444444444	subdaily_repetition
