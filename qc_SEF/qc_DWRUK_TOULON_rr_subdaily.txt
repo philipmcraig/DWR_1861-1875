@@ -1,0 +1,2 @@
+Var	Year	Month	Day	Hour	Minute	Value	Test
+rr	1873	9	25	6	51	101.6	subdaily_out_of_range
