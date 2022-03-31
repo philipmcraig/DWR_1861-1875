@@ -1,0 +1,3 @@
+Var	Year	Month	Day	Hour	Minute	Value	Test
+mslp	1872	4	22	8	0	977.650793	wmo_time_consistency
+mslp	1872	4	22	14	0	1011.853332	wmo_time_consistency
