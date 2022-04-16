@@ -1,0 +1,8 @@
+Var	Year	Month	Day	Hour	Minute	Value	Test
+ta	1875	1	5	8	0	4.44444444444	subdaily_repetition
+ta	1875	1	6	8	0	4.44444444444	subdaily_repetition
+ta	1875	1	7	8	0	4.44444444444	subdaily_repetition
+ta	1875	1	8	8	0	4.44444444444	subdaily_repetition
+ta	1875	1	9	8	0	4.44444444444	subdaily_repetition
+ta	1875	1	10	8	0	4.44444444444	subdaily_repetition
+ta	1875	1	11	8	0	4.44444444444	subdaily_repetition
