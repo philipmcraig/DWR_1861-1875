@@ -300,7 +300,7 @@ ax3 = pl.subplot(313)#pl.figure(figsize=(23.5,8))
 #pl.plot(dwrpres_ext-ispdpres_12[start12_ispd:],marker='.',ms=10,lw=0)
 ax3.scatter(pl.linspace(1,960,960),dwrpres_hc-ispdpres_hc,s=30,zorder=1,
            marker='o',c=pl.array(cols_hc),edgecolors=cols_hc,facecolor=cols_hc)
-ax3.axvline(x=294,ls='--',color='k',label='DWR time change')
+ax3.axvline(x=324,ls='--',color='k',label='DWR time change')
 #pl.xlim(0,1345)
 ax3.legend(loc=1)
 
@@ -320,5 +320,5 @@ dot = ax3.scatter(qcr,dwrpres_hc[qcr]-ispdpres_hc[qcr],s=40,marker='o',
 pl.tight_layout()
 pl.subplots_adjust(bottom=0.02,top=0.98,hspace=0.15)
 
-#pl.savefig('C:\Users\qx911590\Documents/figures/dwr_ispd_pres_compare_panels.png',dpi=400)
-#pl.savefig('C:\Users\qx911590\Documents/figures/dwr_ispd_pres_compare_panels.pdf',dpi=400)
+pl.savefig('C:\Users\phili\Pictures\dwr_ispd_pres_compare_panels.png',dpi=400)
+pl.savefig('C:\Users\phili\Pictures\dwr_ispd_pres_compare_panels.pdf',dpi=400)
