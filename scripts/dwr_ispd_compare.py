@@ -19,7 +19,7 @@ def GW_data(statname,sefdir,ispddir):
     dwrmn = dwrdata[:,1].astype(int)
     dwrdy = dwrdata[:,2].astype(int)
     
-    ispdsef = glob.glob(ispddir+'ISPDv4_UK_Ireland/ISPDv4_GALWAY_p_*.tsv')
+    ispdsef = glob.glob(ispddir+'ISPDv4_EU/ISPDv4_GALWAY_p_*.tsv')
     ispddata = pl.genfromtxt(ispdsef[0],delimiter='	',skiprows=13,dtype='object')
     ispdpres = ispddata[:,-2].astype(float)
     ispdyr = ispddata[:,0].astype(int)
@@ -82,7 +82,7 @@ def PM_data(statname,sefdir,ispddir):
     dwrmn = dwrdata[:,1].astype(int)
     dwrdy = dwrdata[:,2].astype(int)
     
-    ispdsef = glob.glob(ispddir+'ISPDv4_UK_Ireland/ISPDv4_PLYMOUTH-UK_mslp_*.tsv')
+    ispdsef = glob.glob(ispddir+'ISPDv4_EU/ISPDv4_PLYMOUTH-UK_mslp_*.tsv')
     ispddata = pl.genfromtxt(ispdsef[0],delimiter='	',skiprows=13,dtype='object')
     ispdpres = ispddata[:,-2].astype(float)
     ispdyr = ispddata[:,0].astype(int)
@@ -208,10 +208,10 @@ def HC_data(statname,sefdir,ispddir):
 
 pl.close('all')
 
-sefdir = 'C:\Users\qx911590\Documents/SEF_1861-1875/'
-ispddir = 'C:\Users\qx911590\Documents/GitHub/weather-rescue/'
-emulate = 'C:\Users\qx911590\Documents/GitHub/weather-rescue/emulate/'
-iredir = 'C:\Users\qx911590\Documents/ILMMT/'
+sefdir = 'C:\Users\phili\GitHub\DWR_1861-1875\SEF_1861-1875/'
+ispddir = 'C:\Users\phili/GitHub/weather-rescue/'
+emulate = 'C:\Users\phili/GitHub/weather-rescue/emulate/'
+#iredir = 'C:\Users\qx911590\Documents/ILMMT/'
 
 stations = ['GALWAY','PLYMOUTH','HEARTSCONTENT']
 
@@ -260,13 +260,13 @@ fig, ax = pl.subplots(3,1,figsize=(20,12))
 
 ax1 = pl.subplot(311)
 
-ax1.scatter(pl.linspace(0,1345,1345),dwrpres_gw-ispdpres_gw,s=30,marker='o',
+ax1.scatter(pl.linspace(0,1346,1346),dwrpres_gw-ispdpres_gw,s=30,marker='o',
             c=pl.array(cols_gw),edgecolors=cols_gw,facecolor=cols_gw)#,zorder=zo_gw)
 pl.xlim(0,1345); pl.ylim(-20,30)
 pl.yticks(size=13); pl.ylabel('hPa',fontsize=16,labelpad=-10)
 pl.grid(axis='y')
 pl.title('Galway DWR mslp minus ISPD p')
-pl.xticks(pl.linspace(1,1345,1345)[::100],plotdates_gw[::100])
+pl.xticks(pl.linspace(1,1345,1346)[::100],plotdates_gw[::100])
 fig.text(0.0075,0.955,'(a)',size=15)
 
 qcr = pl.where(pl.asarray(cols_gw)=='r')[0]
@@ -276,13 +276,13 @@ dot = ax1.scatter(qcr,dwrpres_gw[qcr]-ispdpres_gw[qcr],s=40,marker='o',
 
 ax2 = pl.subplot(312)
 
-sct = ax2.scatter(pl.linspace(0,3117,3117),dwrpres_pm-ispdpres_pm,s=30,marker='o',
+sct = ax2.scatter(pl.linspace(0,3117,3118),dwrpres_pm-ispdpres_pm,s=30,marker='o',
             c=pl.array(cols_pm),edgecolors=cols_pm,facecolor=cols_pm)
 pl.xlim(0,3117); pl.ylim(-5,5)
 pl.yticks(size=13); pl.ylabel('hPa',fontsize=16,labelpad=-10)
 pl.grid(axis='y')
 pl.title('Plymouth DWR mslp minus ISPD mslp')
-pl.xticks(pl.linspace(1,3117,3117)[::200],plotdates_pm[::200])
+pl.xticks(pl.linspace(1,3117,3118)[::200],plotdates_pm[::200])
 fig.text(0.0075,0.62,'(b)',size=15)
 
 qcr = pl.where(pl.asarray(cols_pm)=='r')[0]

@@ -109,11 +109,12 @@ def CombineData(inseries_8am,inseries_2pm,split,dtype):
 
 #jashome = '/home/users/pmcraig/'
 #ncasdir = '/gws/nopw/j04/ncas_climate_vol1/users/pmcraig/'
-dwrdir = 'C:\Users\qx911590\Documents\dwr-1861-1875\\finished/'
+homedir = 'C:/Users/phili/Github/DWR_1861-1875/'
+dwrdir = homedir+'finished/'#'C:\Users\qx911590\Documents\dwr-1861-1875\\finished/'
 sefdir = 'C:\Users\qx911590\Documents/Data_for_SEF/'#'M:\Data_for_SEF/'#ncasdir + 'Data_for_SEF/'
 
-years = pl.linspace(1861,1863,3).astype(int) # years for which station data is available
-loc = 'Portrush' # station name
+years = pl.linspace(1861,1875,15).astype(int) # years for which station data is available
+loc = 'Aberdeen' # station name
 vcol = 1 # variable column (1 for mslp, 2 for Td, -1 for rain)
 vcol2pm = -3 # variable column for 2pm data (-3 for mslp, -2 for Td, -1 for Tw)
 INC2PM = False # set to True to use 2pm data, False when there is none
@@ -173,16 +174,16 @@ for Y in range(years.size): # loop over years
             varyr[i] = float(logs[ind,vcol][1:])*33.8639 # convert to hPa
             origyr[i] = float(logs[ind,vcol][1:]) # store original value
             metalist.append('?') # but only add ? to metalist
-            print dwrfiles[i][51:]
+            print dwrfiles[i][49:]
         else: # otherwise these are the normal options
             varyr[i] = float(logs[ind,vcol])*33.8639
             origyr[i] = float(logs[ind,vcol])
             metalist.append('')
         
         # store date for each day in dates array
-        yr = dwrfiles[i][55:59]
-        mon = dwrfiles[i][60:62]
-        day = dwrfiles[i][63:65]
+        yr = dwrfiles[i][49:53]
+        mon = dwrfiles[i][54:56]
+        day = dwrfiles[i][57:59]
         dates[i] = yr+'/'+mon+'/'+day
         
         # only use this if 2pm data exists
@@ -201,7 +202,7 @@ for Y in range(years.size): # loop over years
                 var2pmyr[i] = float(logs[ind,vcol2pm][1:])*33.8639 # save as hPa
                 orig2pmyr[i] = float(logs[ind,vcol2pm][1:]) # save original val
                 metalist.append('?') # but only add ? to metalist
-                print dwrfiles[i][51:]
+                print dwrfiles[i][49:]
             else: # otherwise these are the normal options
                 var2pmyr[i] = float(logs[ind,vcol2pm])*33.8639
                 orig2pmyr[i] = float(logs[ind,vcol2pm])
@@ -374,5 +375,5 @@ else:
     data = pd.DataFrame(data.T)
     
     # write data frame to .csv file
-    data.to_csv(sefdir+loc+'_mslp.csv',index=False,
-                header=['year','month','day','hour','minute','mslp','meta'])
+    #data.to_csv(sefdir+loc+'_mslp.csv',index=False,
+    #            header=['year','month','day','hour','minute','mslp','meta'])

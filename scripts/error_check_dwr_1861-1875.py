@@ -9,6 +9,7 @@ import pylab as pl
 import pandas as pd
 import glob
 import os
+from  __builtin__ import any as b_any
 
 homedir = 'C:/Users/phili/Github/DWR_1861-1875/'
 #'C:/Users/qx911590/Documents/dwr-1861-1875/'
@@ -24,6 +25,11 @@ pres_count = 0
 rain_count = 0
 tdry_count = 0
 twet_count = 0
+qm = 0
+LS = 0
+miss_count = 0
+empty_count = 0
+good_count = 0
 
 for Y in range(len(years)):
     filenames = glob.glob(homedir+'finished/DWR_'+str(years[Y])+'*')
@@ -31,23 +37,59 @@ for Y in range(len(years)):
     for i in range(len(filenames)):
         df = pd.read_csv(filenames[i],header=None,skiprows=1)#,names=names)
         logs = pl.array(df)
-        errs = pl.where((logs==-999) | (logs==' -999.00') | (logs==' -999') | (logs=='Inf') | (logs==' Inf'))
-        empty = pl.where((logs==999) | (logs==' 999.00'))
-        miss = pl.where(logs==' NaN')
-        good = pl.where((logs!=999) | (logs!=' 999.00') | (logs!=' NaN'))
+        errs = pl.where((logs==-999) | (logs==' -999.00') | (logs==' -999') | \
+                                                (logs=='Inf') | (logs==' Inf'))
+        empty = pl.where((logs==999) | (logs==' 999.00') | (logs=='999') | \
+                            (logs==' 999') | (logs=='999.00'))
+        miss = pl.where((logs==' NaN') | (logs=='NaN'))
+        good = pl.where((logs[:,1:]!=999) & (logs[:,1:]!=' 999.00') & \
+                         (logs[:,1:]!=' NaN') & (logs[:,1:]!='999') & \
+                         (logs[:,1:]!=' 999') & (logs[:,1:]!='999.99') & \
+                         (logs[:,1:]!='NaN'))
+        
+        LS = LS + logs[:,1:].size
+        
         if years[Y] < 1872:
-            pres_gd = pl.where((logs[:,1]!=999) & (logs[:,1]!=' 999.00') & (logs[:,1]!=' NaN'))
+            pres_gd = pl.where((logs[:,1]!=999) & (logs[:,1]!=' 999.00') & \
+                                (logs[:,1]!=' NaN') & (logs[:,1]!='999') & \
+                                (logs[:,1]!='Inf') & (logs[:,1]!=' Inf') & \
+                                (logs[:,1]!=' 999') & (logs[:,1]!='NaN'))
             PG = pres_gd[0].size
-            rain_gd = pl.where((logs[:,-1]!=999) & (logs[:,-1]!=' 999.00') & (logs[:,-1]!=' NaN'))
-            tdry_gd = pl.where((logs[:,2]!=999) & (logs[:,2]!=' 999.00') & (logs[:,2]!=' NaN'))
+            
+            #if b_any('?' in j for j in logs[:,1].astype(str)) == True:
+            #    qm = qm + 1
+            
+            rain_gd = pl.where((logs[:,-1]!=999) & (logs[:,-1]!=' 999.00') & \
+                                (logs[:,-1]!=' NaN') & (logs[:,-1]!='999') & \
+                                (logs[:,-1]!='Inf') & (logs[:,-1]!=' Inf') & \
+                                (logs[:,-1]!=' 999') & (logs[:,-1]!='NaN'))
+            tdry_gd = pl.where((logs[:,2]!=999) & (logs[:,2]!=' 999.00') & \
+                                (logs[:,2]!=' NaN') & (logs[:,2]!='999') & \
+                                (logs[:,2]!='Inf') & (logs[:,2]!=' Inf') & \
+                                (logs[:,2]!=' 999') & (logs[:,2]!='NaN'))
             TDG = tdry_gd[0].size
         else:
-            pg1 = pl.where((logs[:,1]!=999) & (logs[:,1]!=' 999.00') & (logs[:,1]!=' NaN'))
-            pg2 = pl.where((logs[:,-3]!=999) & (logs[:,-3]!=' 999.00') & (logs[:,-3]!=' NaN'))
+            pg1 = pl.where((logs[:,1]!=999) & (logs[:,1]!=' 999.00') & \
+                                (logs[:,1]!=' NaN') & (logs[:,1]!='999') & \
+                                (logs[:,1]!='Inf') & (logs[:,1]!=' Inf') & \
+                                (logs[:,1]!=' 999') & (logs[:,1]!='NaN'))
+            pg2 = pl.where((logs[:,-3]!=999) & (logs[:,-3]!=' 999.00') & \
+                                (logs[:,-3]!=' NaN') & (logs[:,-3]!='999') & \
+                                (logs[:,-3]!='Inf') & (logs[:,-3]!=' Inf') & \
+                                (logs[:,-3]!=' 999') & (logs[:,-3]!='NaN'))
             PG = pg1[0].size + pg2[0].size
-            rain_gd = pl.where((logs[:,-4]!=999) & (logs[:,-4]!=' 999.00') & (logs[:,-4]!=' NaN'))
-            tdg1 = pl.where((logs[:,2]!=999) & (logs[:,2]!=' 999.00') & (logs[:,2]!=' NaN'))
-            tdg2 = pl.where((logs[:,-2]!=999) & (logs[:,-2]!=' 999.00') & (logs[:,-2]!=' NaN'))
+            rain_gd = pl.where((logs[:,-4]!=999) & (logs[:,-4]!=' 999.00') & \
+                                (logs[:,-4]!=' NaN') & (logs[:,-4]!='999') & \
+                                (logs[:,-4]!='Inf') & (logs[:,-4]!=' Inf') & \
+                                (logs[:,-4]!=' 999') & (logs[:,-4]!='NaN'))
+            tdg1 = pl.where((logs[:,2]!=999) & (logs[:,2]!=' 999.00') & \
+                            (logs[:,2]!=' NaN') & (logs[:,2]!='999') & \
+                            (logs[:,2]!='Inf') & (logs[:,2]!=' Inf') & \
+                            (logs[:,2]!=' 999') & (logs[:,2]!='NaN'))
+            tdg2 = pl.where((logs[:,-2]!=999) & (logs[:,-2]!=' 999.00') & \
+                            (logs[:,-2]!=' NaN') & (logs[:,-2]!='999') & \
+                            (logs[:,-2]!='Inf') & (logs[:,-2]!=' Inf') & \
+                            (logs[:,-2]!=' 999') & (logs[:,-2]!='NaN'))
             TDG = tdg1[0].size + tdg2[0].size
         
         if years[Y] < 1864:
@@ -72,6 +114,9 @@ for Y in range(len(years)):
         rain_count = rain_count + rain_gd[0].size
         tdry_count = tdry_count + TDG
         twet_count = twet_count + TWG
+        miss_count = miss_count + miss[0].size
+        empty_count = empty_count + empty[0].size
+        good_count = good_count + good[0].size
     #    
     #    if errs[0].size > 0:
     #        print filenames[i]
@@ -94,3 +139,6 @@ print 'Total number of pressure values = ', pres_count
 print 'Total number of rain values = ', rain_count
 print 'Total number of tdry values = ', tdry_count
 print 'Total number of twet values = ', twet_count
+print 'Total number of missing values = ', miss_count
+print 'Total number of empty values = ', empty_count
+print 'Total number of good values = ', good_count
