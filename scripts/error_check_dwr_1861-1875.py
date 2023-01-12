@@ -50,11 +50,12 @@ for Y in range(len(years)):
         LS = LS + logs[:,1:].size
         
         if years[Y] < 1872:
-            pres_gd = pl.where((logs[:,1]!=999) & (logs[:,1]!=' 999.00') & \
-                                (logs[:,1]!=' NaN') & (logs[:,1]!='999') & \
-                                (logs[:,1]!='Inf') & (logs[:,1]!=' Inf') & \
-                                (logs[:,1]!=' 999') & (logs[:,1]!='NaN'))
-            PG = pres_gd[0].size
+#            pres_gd = pl.where((logs[:,1]!=999) & (logs[:,1]!=' 999.00') & \
+#                                (logs[:,1]!=' NaN') & (logs[:,1]!='999') & \
+#                                (logs[:,1]!='Inf') & (logs[:,1]!=' Inf') & \
+#                                (logs[:,1]!=' 999') & (logs[:,1]!='NaN'))
+#            PG = pres_gd[0].size
+            PG = df[(df[1].dtype=='float64') & (df[1]!=999) & (df[1]!=-999)][1].size
             
             #if b_any('?' in j for j in logs[:,1].astype(str)) == True:
             #    qm = qm + 1
@@ -69,15 +70,16 @@ for Y in range(len(years)):
                                 (logs[:,2]!=' 999') & (logs[:,2]!='NaN'))
             TDG = tdry_gd[0].size
         else:
-            pg1 = pl.where((logs[:,1]!=999) & (logs[:,1]!=' 999.00') & \
-                                (logs[:,1]!=' NaN') & (logs[:,1]!='999') & \
-                                (logs[:,1]!='Inf') & (logs[:,1]!=' Inf') & \
-                                (logs[:,1]!=' 999') & (logs[:,1]!='NaN'))
-            pg2 = pl.where((logs[:,-3]!=999) & (logs[:,-3]!=' 999.00') & \
-                                (logs[:,-3]!=' NaN') & (logs[:,-3]!='999') & \
-                                (logs[:,-3]!='Inf') & (logs[:,-3]!=' Inf') & \
-                                (logs[:,-3]!=' 999') & (logs[:,-3]!='NaN'))
-            PG = pg1[0].size + pg2[0].size
+#            pg1 = pl.where((logs[:,1]!=999) & (logs[:,1]!=' 999.00') & \
+#                                (logs[:,1]!=' NaN') & (logs[:,1]!='999') & \
+#                                (logs[:,1]!='Inf') & (logs[:,1]!=' Inf') & \
+#                                (logs[:,1]!=' 999') & (logs[:,1]!='NaN'))
+#            pg2 = pl.where((logs[:,-3]!=999) & (logs[:,-3]!=' 999.00') & \
+#                                (logs[:,-3]!=' NaN') & (logs[:,-3]!='999') & \
+#                                (logs[:,-3]!='Inf') & (logs[:,-3]!=' Inf') & \
+#                                (logs[:,-3]!=' 999') & (logs[:,-3]!='NaN'))
+            PG = df[(df[1].dtype=='float64') & (df[1]!=999) & (df[1]!=-999)][1].size + \
+                df[(df[7].dtype=='float64') & (df[7]!=999) & (df[7]!=-999)][7].size
             rain_gd = pl.where((logs[:,-4]!=999) & (logs[:,-4]!=' 999.00') & \
                                 (logs[:,-4]!=' NaN') & (logs[:,-4]!='999') & \
                                 (logs[:,-4]!='Inf') & (logs[:,-4]!=' Inf') & \
